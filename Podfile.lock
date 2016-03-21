@@ -1,0 +1,16 @@
+PODS:
+  - Cloudinary (1.0.15)
+  - QvikSwift (2.0.15)
+  - XCGLogger (3.2)
+
+DEPENDENCIES:
+  - Cloudinary
+  - QvikSwift (~> 2.0.0)
+  - XCGLogger (~> 3.0)
+
+SPEC CHECKSUMS:
+  Cloudinary: f80af4565ec08c521d5e58cb56d9fbe1e4595e40
+  QvikSwift: c803a063a282c3e30b9de1e370604de16b47ad4d
+  XCGLogger: da1f341f4bb8979db6e1df64232f04d9698402d4
+
+COCOAPODS: 0.39.0
