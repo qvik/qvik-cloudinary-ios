@@ -52,6 +52,7 @@ private func exportVideoDataForExportSession(exportSession: AVAssetExportSession
         
         if exportSession.status == .Completed {
             log.verbose("Video encoding OK, the process took \(-startTime.timeIntervalSinceNow) seconds")
+            log.verbose("Video written to URL: \(exportSession.outputURL)")
             
             runOnMainThread {
                 // Callback on main thread

@@ -121,10 +121,10 @@ public class CloudinaryService {
      see ```exportVideoDataForAssetUrl()```.
      - returns: true if the download started ok, false if there were errors
      */
-    public func uploadVideo(videoFileUrl videoFileUrl: String, progressCallback: (Float -> Void), completionCallback: (UploadResponse -> Void)) -> Bool {
+    public func uploadVideo(videoFilePath videoFilePath: String, progressCallback: (Float -> Void), completionCallback: (UploadResponse -> Void)) -> Bool {
         assert(NSThread.isMainThread(), "Must be called on the main thread")
         
-        log.verbose("Starting Cloudinary video upload - media URL: \(videoFileUrl)")
+        log.verbose("Starting Cloudinary video upload - video file path: \(videoFilePath)")
         let uploader = CLUploader(cloudinary, delegate: nil)
         
         let options = [
@@ -136,7 +136,7 @@ public class CloudinaryService {
         operationStarted()
         
         log.verbose("Starting Cloudinary uploader..")
-        uploader.upload((videoFileUrl as NSString), options: options, withCompletion: { (successResult, errorResult, code, context) in
+        uploader.upload((videoFilePath as NSString), options: options, withCompletion: { (successResult, errorResult, code, context) in
             log.debug("Video upload completed, successResult: \(successResult), errorResult: \(errorResult), code: \(code)")
             let allCompleted = self.operationCompleted()
             

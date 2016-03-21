@@ -12,6 +12,7 @@
 		4947DF691C9FE9B900FF7FFA /* CloudinaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF681C9FE9B900FF7FFA /* CloudinaryService.swift */; };
 		4947DF6B1C9FEA0E00FF7FFA /* QvikCloudinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF6A1C9FEA0E00FF7FFA /* QvikCloudinary.swift */; };
 		4947DF6D1C9FEC1700FF7FFA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF6C1C9FEC1700FF7FFA /* Utils.swift */; };
+		4947DF731CA01E3600FF7FFA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF721CA01E3600FF7FFA /* README.md */; };
 		ED50CF4E5A967A55CA85A0FC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C7BEC301EF0BDFCDF1D466 /* Pods.framework */; };
 /* End PBXBuildFile section */
 
@@ -35,6 +36,9 @@
 		4947DF681C9FE9B900FF7FFA /* CloudinaryService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudinaryService.swift; sourceTree = "<group>"; };
 		4947DF6A1C9FEA0E00FF7FFA /* QvikCloudinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QvikCloudinary.swift; sourceTree = "<group>"; };
 		4947DF6C1C9FEC1700FF7FFA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		4947DF6E1CA00FC200FF7FFA /* QvikCloudinary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QvikCloudinary.podspec; sourceTree = "<group>"; };
+		4947DF6F1CA00FC200FF7FFA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4947DF721CA01E3600FF7FFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		558D5BFF0862F2FCA89BEA70 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		6CD3197784E98FD10A5822D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,6 +74,9 @@
 		4947DF441C9FE74D00FF7FFA = {
 			isa = PBXGroup;
 			children = (
+				4947DF721CA01E3600FF7FFA /* README.md */,
+				4947DF6E1CA00FC200FF7FFA /* QvikCloudinary.podspec */,
+				4947DF6F1CA00FC200FF7FFA /* Podfile */,
 				4947DF501C9FE74D00FF7FFA /* QvikCloudinary */,
 				4947DF5C1C9FE74D00FF7FFA /* QvikCloudinaryTests */,
 				4947DF4F1C9FE74D00FF7FFA /* Products */,
@@ -260,6 +267,7 @@
 			files = (
 				4947DF6B1C9FEA0E00FF7FFA /* QvikCloudinary.swift in Sources */,
 				4947DF691C9FE9B900FF7FFA /* CloudinaryService.swift in Sources */,
+				4947DF731CA01E3600FF7FFA /* README.md in Sources */,
 				4947DF6D1C9FEC1700FF7FFA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
