@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1602815AA3DA3E0E319F33F0 /* Pods_QvikCloudinaryTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F8D2162B9557FF8D16EFA7 /* Pods_QvikCloudinaryTests.framework */; };
 		4947DF591C9FE74D00FF7FFA /* QvikCloudinary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4947DF4E1C9FE74D00FF7FFA /* QvikCloudinary.framework */; };
 		4947DF5E1C9FE74D00FF7FFA /* QvikCloudinaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF5D1C9FE74D00FF7FFA /* QvikCloudinaryTests.swift */; };
 		4947DF691C9FE9B900FF7FFA /* CloudinaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF681C9FE9B900FF7FFA /* CloudinaryService.swift */; };
 		4947DF6B1C9FEA0E00FF7FFA /* QvikCloudinary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF6A1C9FEA0E00FF7FFA /* QvikCloudinary.swift */; };
 		4947DF6D1C9FEC1700FF7FFA /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF6C1C9FEC1700FF7FFA /* Utils.swift */; };
-		4947DF731CA01E3600FF7FFA /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 4947DF721CA01E3600FF7FFA /* README.md */; };
-		ED50CF4E5A967A55CA85A0FC /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04C7BEC301EF0BDFCDF1D466 /* Pods.framework */; };
+		8AC4FE555D6D5AC02A3A97AA /* Pods_QvikCloudinary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD7AEA77188CDCEA890A6848 /* Pods_QvikCloudinary.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,10 +37,14 @@
 		4947DF6A1C9FEA0E00FF7FFA /* QvikCloudinary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QvikCloudinary.swift; sourceTree = "<group>"; };
 		4947DF6C1C9FEC1700FF7FFA /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		4947DF6E1CA00FC200FF7FFA /* QvikCloudinary.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QvikCloudinary.podspec; sourceTree = "<group>"; };
-		4947DF6F1CA00FC200FF7FFA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		4947DF6F1CA00FC200FF7FFA /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		4947DF721CA01E3600FF7FFA /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		558D5BFF0862F2FCA89BEA70 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		6CD3197784E98FD10A5822D6 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		55F8D2162B9557FF8D16EFA7 /* Pods_QvikCloudinaryTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QvikCloudinaryTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A68C95850B53B28682E60857 /* Pods-QvikCloudinaryTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikCloudinaryTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-QvikCloudinaryTests/Pods-QvikCloudinaryTests.release.xcconfig"; sourceTree = "<group>"; };
+		BC13A6E7DAE208356836F10F /* Pods-QvikCloudinaryTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikCloudinaryTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QvikCloudinaryTests/Pods-QvikCloudinaryTests.debug.xcconfig"; sourceTree = "<group>"; };
+		D28C1DCC67A7E58DE3F27369 /* Pods-QvikCloudinary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikCloudinary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QvikCloudinary/Pods-QvikCloudinary.debug.xcconfig"; sourceTree = "<group>"; };
+		DD7AEA77188CDCEA890A6848 /* Pods_QvikCloudinary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QvikCloudinary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F0583D35880319512AB5E661 /* Pods-QvikCloudinary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QvikCloudinary.release.xcconfig"; path = "Pods/Target Support Files/Pods-QvikCloudinary/Pods-QvikCloudinary.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED50CF4E5A967A55CA85A0FC /* Pods.framework in Frameworks */,
+				8AC4FE555D6D5AC02A3A97AA /* Pods_QvikCloudinary.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +61,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4947DF591C9FE74D00FF7FFA /* QvikCloudinary.framework in Frameworks */,
+				1602815AA3DA3E0E319F33F0 /* Pods_QvikCloudinaryTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,6 +72,8 @@
 			isa = PBXGroup;
 			children = (
 				04C7BEC301EF0BDFCDF1D466 /* Pods.framework */,
+				DD7AEA77188CDCEA890A6848 /* Pods_QvikCloudinary.framework */,
+				55F8D2162B9557FF8D16EFA7 /* Pods_QvikCloudinaryTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -80,8 +87,8 @@
 				4947DF501C9FE74D00FF7FFA /* QvikCloudinary */,
 				4947DF5C1C9FE74D00FF7FFA /* QvikCloudinaryTests */,
 				4947DF4F1C9FE74D00FF7FFA /* Products */,
-				CAE46604551CF789C0FBC4D6 /* Pods */,
 				1B025362A21DE57BBCD94375 /* Frameworks */,
+				DC8001BEDA7AA911CC01E89E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -114,11 +121,13 @@
 			path = QvikCloudinaryTests;
 			sourceTree = "<group>";
 		};
-		CAE46604551CF789C0FBC4D6 /* Pods */ = {
+		DC8001BEDA7AA911CC01E89E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				6CD3197784E98FD10A5822D6 /* Pods.debug.xcconfig */,
-				558D5BFF0862F2FCA89BEA70 /* Pods.release.xcconfig */,
+				D28C1DCC67A7E58DE3F27369 /* Pods-QvikCloudinary.debug.xcconfig */,
+				F0583D35880319512AB5E661 /* Pods-QvikCloudinary.release.xcconfig */,
+				BC13A6E7DAE208356836F10F /* Pods-QvikCloudinaryTests.debug.xcconfig */,
+				A68C95850B53B28682E60857 /* Pods-QvikCloudinaryTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -140,12 +149,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4947DF621C9FE74D00FF7FFA /* Build configuration list for PBXNativeTarget "QvikCloudinary" */;
 			buildPhases = (
-				0C77761928D1AFFE7BD213C7 /* Check Pods Manifest.lock */,
+				466958C7285BA6045BF91676 /* [CP] Check Pods Manifest.lock */,
 				4947DF491C9FE74D00FF7FFA /* Sources */,
 				4947DF4A1C9FE74D00FF7FFA /* Frameworks */,
 				4947DF4B1C9FE74D00FF7FFA /* Headers */,
 				4947DF4C1C9FE74D00FF7FFA /* Resources */,
-				C51C64CCC89D7A0B02C323B5 /* Copy Pods Resources */,
+				28DD46F51B23C4054CE3E563 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -160,9 +169,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4947DF651C9FE74D00FF7FFA /* Build configuration list for PBXNativeTarget "QvikCloudinaryTests" */;
 			buildPhases = (
+				0B6D26B3F4BFC479AB66794F /* [CP] Check Pods Manifest.lock */,
 				4947DF541C9FE74D00FF7FFA /* Sources */,
 				4947DF551C9FE74D00FF7FFA /* Frameworks */,
 				4947DF561C9FE74D00FF7FFA /* Resources */,
+				06F352A4DD0043C8801C46A2 /* [CP] Embed Pods Frameworks */,
+				1000498D64A01A9B20090C10 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -186,9 +198,13 @@
 				TargetAttributes = {
 					4947DF4D1C9FE74D00FF7FFA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2RLYKMD3U8;
+						LastSwiftMigration = 0800;
 					};
 					4947DF571C9FE74D00FF7FFA = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = 2RLYKMD3U8;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -228,14 +244,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0C77761928D1AFFE7BD213C7 /* Check Pods Manifest.lock */ = {
+		06F352A4DD0043C8801C46A2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QvikCloudinaryTests/Pods-QvikCloudinaryTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0B6D26B3F4BFC479AB66794F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -243,19 +274,49 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C51C64CCC89D7A0B02C323B5 /* Copy Pods Resources */ = {
+		1000498D64A01A9B20090C10 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QvikCloudinaryTests/Pods-QvikCloudinaryTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		28DD46F51B23C4054CE3E563 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QvikCloudinary/Pods-QvikCloudinary-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		466958C7285BA6045BF91676 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -267,7 +328,6 @@
 			files = (
 				4947DF6B1C9FEA0E00FF7FFA /* QvikCloudinary.swift in Sources */,
 				4947DF691C9FE9B900FF7FFA /* CloudinaryService.swift in Sources */,
-				4947DF731CA01E3600FF7FFA /* README.md in Sources */,
 				4947DF6D1C9FEC1700FF7FFA /* Utils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -382,10 +442,12 @@
 		};
 		4947DF631C9FE74D00FF7FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6CD3197784E98FD10A5822D6 /* Pods.debug.xcconfig */;
+			baseConfigurationReference = D28C1DCC67A7E58DE3F27369 /* Pods-QvikCloudinary.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -396,15 +458,17 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4947DF641C9FE74D00FF7FFA /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 558D5BFF0862F2FCA89BEA70 /* Pods.release.xcconfig */;
+			baseConfigurationReference = F0583D35880319512AB5E661 /* Pods-QvikCloudinary.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -414,26 +478,33 @@
 				PRODUCT_BUNDLE_IDENTIFIER = fi.qvik.QvikCloudinary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
 		4947DF661C9FE74D00FF7FFA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC13A6E7DAE208356836F10F /* Pods-QvikCloudinaryTests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = QvikCloudinaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.qvik.QvikCloudinaryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		4947DF671C9FE74D00FF7FFA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A68C95850B53B28682E60857 /* Pods-QvikCloudinaryTests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = QvikCloudinaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = fi.qvik.QvikCloudinaryTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};

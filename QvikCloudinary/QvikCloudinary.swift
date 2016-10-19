@@ -28,34 +28,34 @@ let log = QvikCloudinary.createLogger()
 /**
  Library facade class for controlling library's logging level.
  */
-public class QvikCloudinary {
+open class QvikCloudinary {
     public enum LogLevel {
-        case Info
-        case Debug
-        case Verbose
+        case info
+        case debug
+        case verbose
     }
     
-    private static func createLogger() -> XCGLogger {
+    fileprivate static func createLogger() -> XCGLogger {
         let logger = XCGLogger(identifier: "QvikCloudinary")
-        logger.setup(.Info, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: nil)
+        logger.setup(level: .info, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLevel: nil)
         
         return logger
     }
     
-    public static var logLevel = QvikCloudinary.LogLevel.Info {
+    open static var logLevel = QvikCloudinary.LogLevel.info {
         didSet {
-            let level: XCGLogger.LogLevel
+            let level: XCGLogger.Level
             
             switch logLevel {
-            case .Info:
-                level = .Info
-            case .Debug:
-                level = .Debug
-            case .Verbose:
-                level = .Verbose
+            case .info:
+                level = .info
+            case .debug:
+                level = .debug
+            case .verbose:
+                level = .verbose
             }
             
-            log.setup(level, showLogLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLogLevel: nil)
+            log.setup(level: level, showLevel: true, showFileNames: true, showLineNumbers: true, writeToFile: nil, fileLevel: nil)
         }
     }
 }

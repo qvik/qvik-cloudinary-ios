@@ -17,7 +17,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "QvikCloudinary"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "QvikCloudinary is a Cloudinary wrapper / utility collection."
   s.homepage     = "https://github.com/qvik/qvik-network-ios"
 
@@ -53,11 +53,9 @@ Pod::Spec.new do |s|
   #
 
   s.platform     = :ios
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-  # s.platform     = :ios
-  # s.platform     = :ios, "5.0"
 
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -103,8 +101,8 @@ Pod::Spec.new do |s|
 
   s.framework = "UIKit"
   s.dependency 'Cloudinary', '~> 1.0'
-  s.dependency 'QvikSwift', '~> 2.0.0'
-  s.dependency 'XCGLogger', '~> 3.0'
+  s.dependency 'QvikSwift', '~> 3.0.0'
+  s.dependency 'XCGLogger', '~> 4.0'
 
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

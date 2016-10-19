@@ -36,35 +36,35 @@ public let QCUtilsCouldNotGetAssetURL = -102
  The caller should delete the file at videoFileUrl once it is no longer needed.
  The callback will be called on the main thread.
  */
-private func exportVideoDataForExportSession(exportSession: AVAssetExportSession, completionCallback: ((videoFileUrl: NSURL?, error: NSError?) -> Void)) {
-    let startTime = NSDate()
+public func exportVideoDataForExportSession(_ exportSession: AVAssetExportSession, completionCallback: @escaping ((_ videoFileUrl: URL?, _ error: NSError?) -> Void)) {
+    let startTime = Date()
     
     // Allocate a temporary file to write to
-    let tempFilePath = (NSTemporaryDirectory() as NSString).stringByAppendingPathComponent(NSUUID().UUIDString)
+    let tempFilePath = (NSTemporaryDirectory() as NSString).appendingPathComponent(UUID().uuidString)
     
     // Configure the export session
     exportSession.canPerformMultiplePassesOverSourceMediaData = true
     exportSession.outputFileType = AVFileTypeMPEG4
-    exportSession.outputURL = NSURL(fileURLWithPath: tempFilePath)
+    exportSession.outputURL = URL(fileURLWithPath: tempFilePath)
     
-    exportSession.exportAsynchronouslyWithCompletionHandler() {
+    exportSession.exportAsynchronously() {
         log.debug("Video export completed, status: \(exportSession.status), error: \(exportSession.error)")
         
-        if exportSession.status == .Completed {
+        if exportSession.status == .completed {
             log.verbose("Video encoding OK, the process took \(-startTime.timeIntervalSinceNow) seconds")
             log.verbose("Video written to URL: \(exportSession.outputURL)")
             
             runOnMainThread {
                 // Callback on main thread
-                completionCallback(videoFileUrl: exportSession.outputURL, error: nil)
+                completionCallback(exportSession.outputURL, nil)
             }
         } else {
             runOnMainThread {
                 // Callback on main thread
                 if let error = exportSession.error {
-                    completionCallback(videoFileUrl: nil, error: error)
+                    completionCallback(nil, error as NSError?)
                 } else {
-                    completionCallback(videoFileUrl: nil, error: NSError(domain: QCUtilsErrorDomain, code: QCUtilsVideoEncodeFailed, userInfo: nil))
+                    completionCallback(nil, NSError(domain: QCUtilsErrorDomain, code: QCUtilsVideoEncodeFailed, userInfo: nil))
                 }
             }
         }
@@ -81,10 +81,10 @@ private func exportVideoDataForExportSession(exportSession: AVAssetExportSession
  Uses ```AVAssetExportPreset1280x720``` by default.
  - parameter completionCallback: called when export operation completes; ```videoFileUrl``` points to the created video file on disk; the caller should delete this file once it is no longer needed. ```error``` is set to a NSError in case of errors in operation.
  */
-public func exportVideoDataForAssetUrl(url: NSURL, presetName: String = AVAssetExportPreset1280x720, completionCallback: ((videoFileUrl: NSURL?, error: NSError?) -> Void)) {
-    let asset = AVAsset(URL: url)
+public func exportVideoDataForAssetUrl(_ url: URL, presetName: String = AVAssetExportPreset1280x720, completionCallback: @escaping ((_ videoFileUrl: URL?, _ error: NSError?) -> Void)) {
+    let asset = AVAsset(url: url)
     guard let exportSession = AVAssetExportSession(asset: asset, presetName: presetName) else {
-        completionCallback(videoFileUrl: nil, error: NSError(domain: QCUtilsErrorDomain, code: QCUtilsCouldNotGetExportSession, userInfo: nil))
+        completionCallback(nil, NSError(domain: QCUtilsErrorDomain, code: QCUtilsCouldNotGetExportSession, userInfo: nil))
         return
     }
     
@@ -98,10 +98,10 @@ public func exportVideoDataForAssetUrl(url: NSURL, presetName: String = AVAssetE
  If the max size is not defined or the image is already smaller, the original url is returned, 
  with EXIF path injected to respect orientation.
  */
-func scaledCloudinaryUrl(width width: CGFloat, height: CGFloat, url: String, maxSize: CGSize) -> String {
+public func scaledCloudinaryUrl(width: CGFloat, height: CGFloat, url: String, maxSize: CGSize) -> String {
     if (width < maxSize.width) && (height < maxSize.height) {
         // Image wont be scaled; include exif info to retain orientation
-        let rotatedUrl = url.stringByReplacingOccurrencesOfString("/upload/", withString: "/upload/a_exif/")
+        let rotatedUrl = url.replacingOccurrences(of: "/upload/", with: "/upload/a_exif/")
         return rotatedUrl
     }
     
@@ -109,7 +109,7 @@ func scaledCloudinaryUrl(width width: CGFloat, height: CGFloat, url: String, max
     let heightRatio = height / maxSize.height
     let scale = 1.0 / max(widthRatio, heightRatio)
     let scaleFormat = "w_\(scale)"
-    let scaledUrl = url.stringByReplacingOccurrencesOfString("/upload/", withString: "/upload/\(scaleFormat)/")
+    let scaledUrl = url.replacingOccurrences(of: "/upload/", with: "/upload/\(scaleFormat)/")
     
     return scaledUrl
 }

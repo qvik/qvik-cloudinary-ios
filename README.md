@@ -1,11 +1,13 @@
 # Qvik's Cloudinary utilities
 
-*This library provides common functionality for dealing with the Cloudinary CDN.*
+*This Swift3 library provides common functionality for dealing with the Cloudinary CDN.*
 
 See [Cloudinary](http://cloudinary.com/)
 
 ## Changelog
 
+* 1.0.0
+    * Swift3 conversion, release
 * 0.0.1
 	* Initial version; very much a beta product at this stage.
 
