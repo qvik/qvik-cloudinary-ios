@@ -56,7 +56,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '9.0'
   s.requires_arc = true
 
-
   # ――― Source Location ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Specify the location from where the source should be retrieved.
@@ -64,7 +63,6 @@ Pod::Spec.new do |s|
   #
 
   s.source       = { :git => "https://github.com/qvik/qvik-cloudinary-ios.git", :tag => "#{s.version}" }
-
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -76,8 +74,6 @@ Pod::Spec.new do |s|
 
   s.exclude_files = "QvikCloudinaryTests"
   s.source_files  = "QvikCloudinary/**/*.{swift}"
-
-
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -92,7 +88,6 @@ Pod::Spec.new do |s|
 
   # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
 
-
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
@@ -100,10 +95,9 @@ Pod::Spec.new do |s|
   #
 
   s.framework = "UIKit"
-  s.dependency 'Cloudinary', '~> 1.0'
-  s.dependency 'QvikSwift', '~> 3.0.0'
-  s.dependency 'XCGLogger', '~> 4.0'
-
+  s.dependency 'Cloudinary', '~> 1'
+  s.dependency 'QvikSwift', '~> 3'
+  s.dependency 'XCGLogger', '~> 4'
 
   # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #

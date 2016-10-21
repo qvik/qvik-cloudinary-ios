@@ -6,19 +6,15 @@ PODS:
   - XCGLogger/Core (4.0.0)
 
 DEPENDENCIES:
-  - Cloudinary (~> 1.0)
-  - QvikSwift (from `../qvik-swift-ios/`)
-  - XCGLogger (~> 4.0)
-
-EXTERNAL SOURCES:
-  QvikSwift:
-    :path: ../qvik-swift-ios/
+  - Cloudinary (~> 1)
+  - QvikSwift (~> 3)
+  - XCGLogger (~> 4)
 
 SPEC CHECKSUMS:
   Cloudinary: f80af4565ec08c521d5e58cb56d9fbe1e4595e40
-  QvikSwift: 1bd61fa8b054a128daa5a02c43fbfad9e64fbf7a
+  QvikSwift: 7e53eb23ec02562fa378232ba59522f84e7adcc1
   XCGLogger: 38063ea89b4c8b23232d18efd2e12eb0005f3ea4
 
-PODFILE CHECKSUM: e74e249f33236dabe830d0e0167c31a97766b75b
+PODFILE CHECKSUM: 92d1f0e12fccb120eb17066ae51d9b657a95319a
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.1.0
