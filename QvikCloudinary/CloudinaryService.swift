@@ -95,7 +95,7 @@ open class CloudinaryService {
         operationStarted()
         
         uploader?.upload(imageData, options: options, withCompletion: { (successResult, errorResult, code, context) -> Void in
-            log.debug("Image upload completed, successResult: \(successResult), errorResult: \(errorResult), code: \(code)")
+            log.debug("Image upload completed, successResult: \(String(describing: successResult)), errorResult: \(String(describing: errorResult)), code: \(code)")
             if let url = successResult?["url"] as? String,
                 let width = successResult?["width"] as? Int,
                 let height = successResult?["height"] as? Int {
@@ -137,7 +137,7 @@ open class CloudinaryService {
         
         log.verbose("Starting Cloudinary uploader..")
         uploader?.upload((videoFilePath as NSString), options: options, withCompletion: { (successResult, errorResult, code, context) in
-            log.debug("Video upload completed, successResult: \(successResult), errorResult: \(errorResult), code: \(code)")
+            log.debug("Video upload completed, successResult: \(String(describing: successResult)), errorResult: \(String(describing: errorResult)), code: \(code)")
             let allCompleted = self.operationCompleted()
             
             if let url = successResult?["url"] as? String,

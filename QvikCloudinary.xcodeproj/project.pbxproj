@@ -193,7 +193,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Qvik;
 				TargetAttributes = {
 					4947DF4D1C9FE74D00FF7FFA = {
@@ -492,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = BC13A6E7DAE208356836F10F /* Pods-QvikCloudinaryTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = QvikCloudinaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -505,6 +506,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = A68C95850B53B28682E60857 /* Pods-QvikCloudinaryTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2RLYKMD3U8;
 				INFOPLIST_FILE = QvikCloudinaryTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
