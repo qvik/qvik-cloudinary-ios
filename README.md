@@ -6,6 +6,8 @@ See [Cloudinary](http://cloudinary.com/)
 
 ## Changelog
 
+* 4.0.0
+   * Swift4 version
 * 1.0.1
     * Fixed Xcode 8.3 / Swift 3.1 warnings
 * 1.0.0

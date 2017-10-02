@@ -44,7 +44,7 @@ public func exportVideoDataForExportSession(_ exportSession: AVAssetExportSessio
     
     // Configure the export session
     exportSession.canPerformMultiplePassesOverSourceMediaData = true
-    exportSession.outputFileType = AVFileTypeMPEG4
+    exportSession.outputFileType = AVFileType.mp4
     exportSession.outputURL = URL(fileURLWithPath: tempFilePath)
     
     exportSession.exportAsynchronously() {
