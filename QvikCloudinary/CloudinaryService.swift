@@ -79,7 +79,7 @@ open class CloudinaryService {
      call in a background thread and optionally wrapping it in ```autoreleasepool { .. }```.
      */
     open func upload(image: UIImage, progressCallback: @escaping ((Float) -> Void), completionCallback: @escaping ((UploadResponse) -> Void)) {
-        if let imageData = UIImageJPEGRepresentation(image, 0.9) {
+        if let imageData = image.jpegData(compressionQuality: 0.9) {
             upload(imageData: imageData, progressCallback: progressCallback, completionCallback: completionCallback)
         }
     }

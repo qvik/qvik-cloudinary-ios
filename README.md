@@ -32,6 +32,12 @@ And the following to your source:
 import QvikCloudinary
 ```
 
+## Versions
+
+Use the following library versions for the corresponding Swift language versions:
+
+* 6.x - Swift 5
+
 ## Dependencies
 
 The library has dependencies to the following external modules:

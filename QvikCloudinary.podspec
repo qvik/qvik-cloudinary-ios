@@ -16,10 +16,11 @@ Pod::Spec.new do |s|
   #  summary should be tweet-length, and the description more in depth.
   #
 
-  s.name         = "QvikCloudinary"
-  s.version      = "4.0.0"
-  s.summary      = "QvikCloudinary is a Cloudinary wrapper / utility collection."
-  s.homepage     = "https://github.com/qvik/qvik-network-ios"
+  s.name          = "QvikCloudinary"
+  s.version       = "6.0.0"
+  s.swift_version = "5.0"
+  s.summary       = "QvikCloudinary is a Cloudinary wrapper / utility collection for Swift5."
+  s.homepage      = "https://github.com/qvik/qvik-network-ios"
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -42,9 +43,6 @@ Pod::Spec.new do |s|
   #
 
   s.author             = { "Matti Dahlbom" => "matti.dahlbom@qvik.fi" }
-  # Or just: s.author    = "Matti Dahlbom"
-  # s.authors            = { "Matti Dahlbom" => "matti.dahlbom@qvik.fi" }
-  # s.social_media_url   = "http://twitter.com/Matti Dahlbom"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -75,19 +73,6 @@ Pod::Spec.new do |s|
   s.exclude_files = "QvikCloudinaryTests"
   s.source_files  = "QvikCloudinary/**/*.{swift}"
 
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
-
-  # s.resource  = "icon.png"
-  # s.resources = "Resources/*.png"
-
-  # s.preserve_paths = "FilesToSave", "MoreFilesToSave"
-
   # ――― Project Linking ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
   #  Link your library with frameworks, or libraries. Libraries do not include
@@ -96,18 +81,7 @@ Pod::Spec.new do |s|
 
   s.framework = "UIKit"
   s.dependency 'Cloudinary', '~> 1'
-  s.dependency 'QvikSwift', '~> 4'
-  s.dependency 'XCGLogger', '~> 6'
-
-  # ――― Project Settings ――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  If your library depends on compiler flags you can set them in the xcconfig hash
-  #  where they will only apply to your library. If you depend on other Podspecs
-  #  you can include multiple dependencies to ensure it works.
-
-  # s.requires_arc = true
-
-  # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-  # s.dependency "JSONKit", "~> 1.4"
+  s.dependency 'QvikSwift', '~> 6.0'
+  s.dependency 'XCGLogger', '~> 7.0'
 
 end

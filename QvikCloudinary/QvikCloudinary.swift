@@ -42,7 +42,7 @@ open class QvikCloudinary {
         return logger
     }
     
-    open static var logLevel = QvikCloudinary.LogLevel.info {
+    public static var logLevel = QvikCloudinary.LogLevel.info {
         didSet {
             let level: XCGLogger.Level
             

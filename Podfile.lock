@@ -3,23 +3,31 @@ PODS:
   - ObjcExceptionBridging (1.0.1):
     - ObjcExceptionBridging/ObjcExceptionBridging (= 1.0.1)
   - ObjcExceptionBridging/ObjcExceptionBridging (1.0.1)
-  - QvikSwift (4.0.2)
-  - XCGLogger (6.0.1):
-    - XCGLogger/Core (= 6.0.1)
-  - XCGLogger/Core (6.0.1):
+  - QvikSwift (6.0.0)
+  - XCGLogger (7.0.0):
+    - XCGLogger/Core (= 7.0.0)
+  - XCGLogger/Core (7.0.0):
     - ObjcExceptionBridging
 
 DEPENDENCIES:
   - Cloudinary (~> 1)
-  - QvikSwift (~> 4)
-  - XCGLogger (~> 6)
+  - QvikSwift (~> 6.0)
+  - XCGLogger (~> 7.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Cloudinary
+    - ObjcExceptionBridging
+    - XCGLogger
+  https://github.com/qvik/qvik-podspecs.git:
+    - QvikSwift
 
 SPEC CHECKSUMS:
   Cloudinary: f80af4565ec08c521d5e58cb56d9fbe1e4595e40
   ObjcExceptionBridging: c30e00eb3700467e695faeea30e26e18bd445001
-  QvikSwift: 4eae563a3b7185ba90c6fa00dde9bf86560c5651
-  XCGLogger: b4ca980580108cfeaf221afe158f5d89c1be22e0
+  QvikSwift: c2e4103668bbea7200124f3fa43a0b1ac127f25a
+  XCGLogger: 0434f15e3909cdc450bb63faf638b8792ab782ab
 
-PODFILE CHECKSUM: 0c486f30bd9274791fd5a8d24eeecd7adcaf867b
+PODFILE CHECKSUM: 4893cffe1fa0dc8e07b216719f4d6d9e73d29c14
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.6.1
